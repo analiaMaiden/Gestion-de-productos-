@@ -9,15 +9,27 @@
 - MySQL 8 (o Docker)
 
 ---
+##.env  edítalo con tus credenciales MySQL:
+MYSQL_USER=root
+MYSQL_PASSWORD=root
+MYSQL_HOST=127.0.0.1
+MYSQL_DB=prueba
+MYSQL_PORT=3306
+DRIVER=pymysql
+JWT_SECRET=xxd
+JWT_ALGO=HS256
+JWT_EXPIRE_MIN=360
+---
 
 ## Backend
 ```bash
 cd backend
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env       # editar DATABASE_URL / JWT_SECRET
-uvicorn main:app --reload
+# Windows
+.\.venv\Scripts\activate
+# Linux/Mac
+source .venv/bin/activate
+
 
 Requisitos mínimos
 fastapi
@@ -29,28 +41,5 @@ pydantic
 python-jose[cryptography]
 passlib[bcrypt]
 
-See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Project Setup
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
