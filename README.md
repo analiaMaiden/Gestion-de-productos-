@@ -10,8 +10,8 @@
 
 ---
 ##.env  edítalo con tus credenciales MySQL:
-MYSQL_USER=root
-MYSQL_PASSWORD=root
+-MYSQL_USER=root
+-MYSQL_PASSWORD=root
 MYSQL_HOST=127.0.0.1
 MYSQL_DB=prueba
 MYSQL_PORT=3306
