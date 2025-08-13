@@ -9,17 +9,6 @@
 - MySQL 8 (o Docker)
 
 ---
-.env  edítalo con tus credenciales MySQL:
-MYSQL_USER=root
-MYSQL_PASSWORD=root
-MYSQL_HOST=127.0.0.1
-MYSQL_DB=prueba
-MYSQL_PORT=3306
-DRIVER=pymysql
-JWT_SECRET=xxd
-JWT_ALGO=HS256
-JWT_EXPIRE_MIN=360
----
 
 ## Backend
 ```bash
@@ -39,6 +28,17 @@ pymysql
 python-multipart
 pydantic
 python-jose[cryptography]
+
+.env  edítalo con tus credenciales MySQL:
+MYSQL_USER=root
+MYSQL_PASSWORD=root
+MYSQL_HOST=127.0.0.1
+MYSQL_DB=prueba
+MYSQL_PORT=3306
+DRIVER=pymysql
+JWT_SECRET=xxd
+JWT_ALGO=HS256
+JWT_EXPIRE_MIN=360
 passlib[bcrypt]
 
 
