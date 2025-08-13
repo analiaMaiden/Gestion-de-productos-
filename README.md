@@ -31,6 +31,7 @@ python-multipart
 pydantic
 python-jose[cryptography]
 passlib[bcrypt]
+
 .env  edítalo con tus credenciales MySQL:
 MYSQL_USER=root
 MYSQL_PASSWORD=root
@@ -41,3 +42,7 @@ DRIVER=pymysql
 JWT_SECRET=xxd
 JWT_ALGO=HS256
 JWT_EXPIRE_MIN=360
+
+## font modifica el .env con el puerto 
+VITE_API_URL=http://localhost:8000/
+
