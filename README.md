@@ -2,6 +2,9 @@
 - Frontend: Vue 3 + Vite + Bootstrap 5
 - Backend: FastAPI (Python) + SQLAlchemy + JWT
 - DB: MySQL
+---
+Revisa las ramas , el backent esta en una rama y el postman esta en el archivo del front 
+---
 
 ## Requisitos previos
 - Node 18+ y npm
