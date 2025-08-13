@@ -1,35 +1,39 @@
+# productos-frontend
 
-# Gestión de Productos (Vue + FastAPI + MySQL)
+This template should help get you started developing with Vue 3 in Vite.
 
-Aplicación full-stack para listar, registrar, editar y eliminar **productos** con **Nombre, Descripción, Precio, Imagen y Categoría**.
+## Recommended IDE Setup
 
-## Tecnologías
-- Frontend: Vue 3 + Vite + Bootstrap 5
-- Backend: FastAPI (Python) + SQLAlchemy + JWT
-- DB: MySQL
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Requisitos previos
-- Node 18+ y npm
-- Python 3.10+
-- MySQL 8 (o Docker)
+## Type Support for `.vue` Imports in TS
 
----
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Backend
-```bash
-cd backend
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env       # editar DATABASE_URL / JWT_SECRET
-uvicorn main:app --reload
+## Customize configuration
 
-Requisitos mínimos
-fastapi
-uvicorn[standard]
-sqlalchemy
-pymysql
-python-multipart
-pydantic
-python-jose[cryptography]
-passlib[bcrypt]
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
