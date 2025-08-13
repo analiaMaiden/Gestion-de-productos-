@@ -1,16 +1,33 @@
-# productos-frontend
+## Tecnologías
+- Frontend: Vue 3 + Vite + Bootstrap 5
+- Backend: FastAPI (Python) + SQLAlchemy + JWT
+- DB: MySQL
 
-This template should help get you started developing with Vue 3 in Vite.
+## Requisitos previos
+- Node 18+ y npm
+- Python 3.10+
+- MySQL 8 (o Docker)
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Backend
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env       # editar DATABASE_URL / JWT_SECRET
+uvicorn main:app --reload
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
+Requisitos mínimos
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+python-multipart
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]
 
 See [Vite Configuration Reference](https://vite.dev/config/).
 
