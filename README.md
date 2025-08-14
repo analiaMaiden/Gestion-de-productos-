@@ -9,7 +9,7 @@ Revisa las ramas , el backent esta en una rama y el postman esta en el archivo d
 ## Requisitos previos
 - Node 18+ y npm
 - Python 3.10+
-- MySQL 8 (o Docker)
+- MySQL 8 
 
 ---
 
